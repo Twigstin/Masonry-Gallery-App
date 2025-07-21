@@ -160,8 +160,7 @@ main {
         font-size: 30px;
     }
     .full .fullImage {
-    max-width: 90%;
-    min-width: 50%;
+    width: 90%;
     height: auto;
 }
 }
