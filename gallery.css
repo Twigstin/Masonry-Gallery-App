@@ -145,6 +145,12 @@ main {
     .notFound {
         font-size: 40px;
     }
+    .full .fullImage {
+        min-height: 70%;
+        max-height: 80%;
+        min-width: 70%;
+        max-width: 80%;
+    }
 }
 
 @media only screen and (max-width: 550px) {
