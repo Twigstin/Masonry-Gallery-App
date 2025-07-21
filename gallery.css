@@ -144,38 +144,6 @@ main {
     .notFound {
         font-size: 40px;
     }
-    .full {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
-}
-
-.full .btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 25px;
-    z-index: 5;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 5px 10px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-}
-
-.full .fullImage,
-.fullImage #fullScreenImage {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-    object-fit: contain;
-}
-
 }
 
 @media only screen and (max-width: 550px) {
