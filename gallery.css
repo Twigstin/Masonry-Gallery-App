@@ -151,6 +151,12 @@ main {
         min-width: 70%;
         max-width: 80%;
     }
+    .fullImage #fullScreenImage {
+        min-height: 70%;
+        max-height: 80%;
+        min-width: 70%;
+        max-width: 80%;
+    }
 }
 
 @media only screen and (max-width: 550px) {
