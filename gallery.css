@@ -101,8 +101,7 @@ main {
 .full .fullImage {
     max-width: 70%;
     min-width: 50%;
-    min-height: 60%;
-    max-height: 80%;
+    height: auto;
     margin: 10px auto 10px auto;
     border-radius: 20px;
     position: relative;
@@ -130,9 +129,6 @@ main {
     .photos {
         grid-template-columns: repeat(3, 1fr);
     }
-     .full {
-        padding: 0; /* Was 50px */
-    }
     .search-bar {
         width: 80vw;
     }
@@ -142,27 +138,44 @@ main {
     .photos {
     grid-auto-rows: minmax(100px, 170px);
     }
+    .full .btn {
+        font-size: 20px;
+    }
     .notFound {
         font-size: 40px;
     }
     .full {
-        padding: 0;
-    }
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
 
-    .full .btn {
-        font-size: 20px;
-        top: 10px;
-        right: 10px;
-    }
+.full .btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 25px;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
 
-    .full .fullImage,
-    .fullImage #fullScreenImage {
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        border-radius: 0;
-        object-fit: contain; /* or 'cover' if you want it cropped */
-    }
+.full .fullImage,
+.fullImage #fullScreenImage {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    object-fit: contain;
+}
+
 }
 
 @media only screen and (max-width: 550px) {
