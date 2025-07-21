@@ -142,31 +142,27 @@ main {
     .photos {
     grid-auto-rows: minmax(100px, 170px);
     }
-    .full .btn {
-        font-size: 20px;
-    }
     .notFound {
         font-size: 40px;
     }
-    .full .fullImage {
-        min-height: 70%;
-        max-height: 80%;
-        min-width: 70%;
-        max-width: 80%;
+    .full {
+        padding: 0;
     }
+
+    .full .btn {
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+
     .full .fullImage,
     .fullImage #fullScreenImage {
-        width: 100%;
-        height: auto;
-        min-width: unset;
-        max-width: unset;
-        min-height: unset;
-        max-height: unset;
+        width: 100vw;
+        height: 100vh;
         margin: 0;
         border-radius: 0;
+        object-fit: contain; /* or 'cover' if you want it cropped */
     }
-}
-
 }
 
 @media only screen and (max-width: 550px) {
